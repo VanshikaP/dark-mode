@@ -1,10 +1,12 @@
-import useLocalStorage from './useLocalStorage'
+import { useLocalStorage } from './useLocalStorage'
 
-export const toggleDarkMode = () => {
-    const [darkMode, setDarkMode] = useLocalStorage('dark-mode', false)
+export const useDarkMode = () => {
+    const [darkMode, setDarkMode] = useLocalStorage('darkMode', false)
     
-    document.getElementsByTagName('body').classList.toggle('dark mode');
-    setDarkMode(!darkMode);
-
-    return darkMode;
+    const toggleDarkMode = () => {
+        document.body.classList.toggle('dark-mode');
+        setDarkMode(!darkMode);
+    }
+    
+    return [darkMode, toggleDarkMode];
 }
