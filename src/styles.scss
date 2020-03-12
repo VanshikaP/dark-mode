@@ -205,16 +205,19 @@ img {
 
 .charts {
   width: 80%;
-  margin: 0 auto;
+  margin: 5% auto;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: space-between;
 }
 
 .chart__container {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 50px 0 0;
-  width: 100%;
+  justify-content: space-between;
+  margin: 5% auto;
+  width: 60%;
 }
 
 .chart-header {
@@ -228,9 +231,9 @@ img {
 
 .coin__title {
   display: block;
-  margin-left: 8px;
+  // margin-left: 8px;
     min-width: 160px;
-text-align: left;
+// text-align: left;
 }
 
 .coin__symbol {
@@ -250,4 +253,13 @@ text-align: left;
     background-color: #1F2022;
     border: none;
   }
+}
+
+.coin-tab-btn{
+  background-color: rgb(255, 123, 0);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: large;
 }
