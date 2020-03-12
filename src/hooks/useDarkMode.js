@@ -9,7 +9,6 @@ export const useDarkMode = () => {
     }, [darkMode])
 
     const toggleDarkMode = () => {
-        // document.body.classList.toggle('dark-mode');
         setDarkMode(!darkMode);
     }
     
